@@ -48,4 +48,4 @@ Never use the em dash character or its HTML entity in website copy or metadata. 
 
 ## Production hosting
 
-The canonical URL is `https://diorrego.github.io/`, with no repository path or query parameters. The account-site repository is `diorrego/diorrego.github.io`, publishing main from `/`. The profile repository `diorrego/diorrego` mirrors the source and README. Keep public indexes, metadata, social artwork and repository homepages aligned with the account root.
+The canonical URL is `https://diorrego.github.io/`, with no repository path or query parameters. The account-site repository is `diorrego/diorrego.github.io`, publishing main from `/`. The separate profile repository `diorrego/diorrego` contains only its introduction README; never push website source to it. Keep public indexes, metadata, social artwork and repository homepages aligned with the account root.
