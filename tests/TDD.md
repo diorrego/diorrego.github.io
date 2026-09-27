@@ -111,3 +111,11 @@ The independent Impeccable reviewer returned `ship` after the final desktop/mobi
 The user corrected the required production URL to https://diorrego.github.io/. Tests were updated first and failed on the canonical/social metadata, llms.txt profile link and sitemap location. The implementation corrects all public absolute URLs, structured data, Markdown companions, README links and social-preview artwork. The account-site repository diorrego/diorrego.github.io publishes main from `/`; the profile repository mirrors the source and README.
 
 All 34 behavior tests pass in tests/green-account-root.log (ignored), and the standalone build contains 21 allowlisted files. Both 1200x630 JPGs were regenerated with the account-root footer URL and embedded provenance. No UI layout or research claims changed.
+
+## Profile repository separation RED
+
+The user requested that diorrego/diorrego contain only a profile introduction README. Before removing project files in the separate profile clone, an artifact check required git ls-files to equal README.md alone and failed on the existing website tree. The website source remains in diorrego/diorrego.github.io; this workspace's origin now targets that repository. The profile has its own clone and feature branch, without rewriting history.
+
+## Profile repository separation GREEN
+
+The profile artifact check now confirms a single tracked README.md, a personal introduction, direct contact and a working banner hosted by the website. It rejects project setup instructions, obsolete URL paths and em dashes. The profile commit tree contains only README.md. The website's 34 behavior tests and 21-file build pass after updating repository instructions; its source publishes only to the account-site origin. GitHub descriptions and profile topics now reflect the separate purposes, without SEM research in the website's About description.
