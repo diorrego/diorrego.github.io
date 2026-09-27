@@ -72,7 +72,7 @@ The Playwright suite checks visitor behavior, accessibility, language changes, r
 
 `public-files.txt` defines the standalone build. `npm run build` copies those files into `dist/`, with exactly one HTML document. The development server uses the same allowlist. Local research and authenticated captures stay in the Git-ignored `documentos/` directory.
 
-GitHub Pages publishes **main, root `/`**, from `diorrego/diorrego.github.io` at https://diorrego.github.io/. The `diorrego/diorrego` profile repository mirrors the source and README. Production language changes do not require redirects. The local `/es/` alias is retained only for legacy preview compatibility.
+GitHub Pages publishes **main, root `/`**, from `diorrego/diorrego.github.io` at https://diorrego.github.io/. The separate `diorrego/diorrego` profile repository contains only a personal introduction README. Production language changes do not require redirects. The local `/es/` alias is retained only for legacy preview compatibility.
 
 Edit the English HTML fallback and its matching entries in `locales/en.json` and `locales/es.json` together. To regenerate social previews, run `node scripts/generate-social-images.mjs` while the development server is running. Never introduce an em dash into public copy or metadata.
 
